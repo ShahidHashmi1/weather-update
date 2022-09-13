@@ -86,12 +86,11 @@ GIVEN a weather dashboard with form inputs
 
 The fully deployed webpage for this project can be found by using the GitHub Pages link below:
 
-https://shahidhashmi1.github.io/weather-forecast/
+https://shahidhashmi1.github.io/...
 
 The codebase and supporting files can be found by using the GitHub repository link below:
 
-https://github.com/ShahidHashmi1/weather-forecast/
-
+https://github.com/ShahidHashmi1/...
 <hr>
 
 ## Credits
