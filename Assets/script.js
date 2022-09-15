@@ -199,12 +199,11 @@ let saveList = document.getElementById("savedSearches")
 
 function saveItems() {
     let userInput = document.querySelector("#search-input").value;
-    // let newLi = document.createElement("li")
+    let saveList = document.getElementById('savedSearches');
+    let newTag = document.createElement("a");
     savedItem = localStorage.setItem('user-input', userInput);
-    let saveList = document.getElementById('savedSearches')
-    let savedSearches = localStorage.getItem(savedItem);
-    newLi.textContent = savedSearches
-    saveList.append(newLi);
+    let savedSearches = localStorage.getItem('user-input', savedItem);
+    saveList.append(savedSearches);
 
 
     // resultsOne
