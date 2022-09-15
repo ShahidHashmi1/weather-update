@@ -206,13 +206,6 @@ function saveItems() {
     saveList.append(savedSearches);
 
 
-    // resultsOne
-    // resultsTwo
-    // resultsThree
-    // resultsFour
-    // resultsFive
-    // resultsToday
-
 }
 
 searchBtn.addEventListener("click", getApi);
