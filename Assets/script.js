@@ -181,7 +181,6 @@ function getApi() {
     resultsToday.append(humidityToday)
     resultsToday.append(windSpeedToday)
 
-    // saveItems()
 })
 }
 
@@ -194,18 +193,27 @@ function showResults() {
 })
 }
 
-var cityList = []
-let saveList = document.getElementById("savedSearches")
-
-function saveItems() {
-    let userInput = document.querySelector("#search-input").value;
-    let saveList = document.getElementById('savedSearches');
-    let newTag = document.createElement("a");
-    savedItem = localStorage.setItem('user-input', userInput);
-    let savedSearches = localStorage.getItem('user-input', savedItem);
-    saveList.append(savedSearches);
+let cityList = [];
+let saveList = document.getElementById("savedSearches");
+let saveItem = document.createElement("li");
 
 
+const saveItems = () => {
+    let input = document.querySelector('#search-input').value;
+    localStorage.setItem('user-input', input)
+    let a = document.createElement('a');
+    a.setAttribute('href', `https://api.openweathermap.org/data/2.5/forecast?q=${input}&id=524901&units=imperial&appid=${APIkey}`)
+    let newTag = document.createElement('li');
+    newTag.appendChild(a);
+    newTag.textContent = input;
+    newTag.setAttribute('class', 'savedItems');
+    saveList.append(newTag)
+    getHistory()
+}
+
+const getHistory = () => {
+    let history = JSON.parse(localStorage.getItem('user-input'));
+    return history;
 }
 
 searchBtn.addEventListener("click", getApi);

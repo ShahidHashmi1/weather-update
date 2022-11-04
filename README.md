@@ -78,7 +78,7 @@ GIVEN a weather dashboard with form inputs
 
 ## MOCK UP
 
-![Weather Forecast](./Assets/images/mockupimg.png)
+![Weather Forecast](./Assets/images/mockup.jpg)
 
 <hr>
 
@@ -86,11 +86,11 @@ GIVEN a weather dashboard with form inputs
 
 The fully deployed webpage for this project can be found by using the GitHub Pages link below:
 
-https://shahidhashmi1.github.io/...
+<a href="https://shahidhashmi1.github.io/weather-update/">Fully Deployed GitHub Pages Link</a>
 
 The codebase and supporting files can be found by using the GitHub repository link below:
 
-https://github.com/ShahidHashmi1/...
+<a href="https://github.com/ShahidHashmi1/weather-update">GitHub repository Link</a>
 <hr>
 
 ## Credits

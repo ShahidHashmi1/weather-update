@@ -20,7 +20,7 @@ body,
     min-width: 100%;
 }
 
-.fiveday-text {
+.fiveday-text, .savedItems {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: x-large;
     font-weight: 100;
